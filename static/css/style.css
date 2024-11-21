@@ -1,0 +1,35 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+.status {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.accident-status {
+    color: red;
+    font-size: 20px;
+}
+
+.traffic-status {
+    color: green;
+    font-size: 20px;
+}
