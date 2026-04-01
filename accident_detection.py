@@ -17,7 +17,7 @@ with open(LABELS_FILE, 'r') as f:
     classes = [line.strip() for line in f.readlines()]
 
 # Initialize video stream (replace with your IP camera URL or webcam)
-ip_camera_url = "http://10.56.129.216:4747/video"  # Update to your video source URL
+ip_camera_url = os.environ.get("CAMERA_URL", "0")  # 0 = webcam fallback
 cap = cv2.VideoCapture(ip_camera_url)
 
 if not cap.isOpened():
