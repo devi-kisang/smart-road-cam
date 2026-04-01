@@ -19,7 +19,7 @@ with open(LABELS_FILE, 'r') as f:
 
 # Initialize video stream from IP camera or webcam
 # Replace this with your live stream URL or use 0 for webcam
-ip_camera_url = "http://10.56.129.216:4747/video"  # Example for IP camera
+ip_camera_url = os.environ.get("CAMERA_URL", "0")  # 0 = webcam fallback
 cap = cv2.VideoCapture(ip_camera_url)
 
 if not cap.isOpened():
